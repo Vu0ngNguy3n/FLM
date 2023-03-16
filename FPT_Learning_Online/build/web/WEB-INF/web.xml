@@ -116,6 +116,54 @@
         <servlet-name>ElectiveViewController</servlet-name>
         <servlet-class>controller.elective.ElectiveViewController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ListPOController</servlet-name>
+        <servlet-class>controller.admin.po_plo.ListPOController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddPOController</servlet-name>
+        <servlet-class>controller.admin.po_plo.AddPOController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListPLOController</servlet-name>
+        <servlet-class>controller.admin.po_plo.ListPLOController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddPLOController</servlet-name>
+        <servlet-class>controller.admin.po_plo.AddPLOController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditPOController</servlet-name>
+        <servlet-class>controller.admin.po_plo.EditPOController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditPLOController</servlet-name>
+        <servlet-class>controller.admin.po_plo.EditPLOController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListPOController</servlet-name>
+        <url-pattern>/FLM/polist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddPOController</servlet-name>
+        <url-pattern>/FLM/poadd</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListPLOController</servlet-name>
+        <url-pattern>/FLM/plolist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddPLOController</servlet-name>
+        <url-pattern>/FLM/ploadd</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditPOController</servlet-name>
+        <url-pattern>/FLM/poedit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditPLOController</servlet-name>
+        <url-pattern>/FLM/ploedit</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>LoginController</servlet-name>
         <url-pattern>/FLM/login</url-pattern>

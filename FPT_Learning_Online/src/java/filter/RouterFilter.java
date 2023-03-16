@@ -114,21 +114,21 @@ public class RouterFilter implements Filter {
         }
         HttpSession session = req.getSession();
        
-//        if (session.getAttribute("account") != null) {
-//            Account account = (Account) session.getAttribute("account");
-//            if (!account.getRole().getRolename().equals("crdd") ) {
-//                if(url.endsWith("userlist")||url.endsWith("dashboard")|| url.contains("combochange")
-//                        || url.contains("comboview")|| url.contains("subjectList")|| url.contains("subjectview")){
-//                    req.getRequestDispatcher("../view/404Page/404Page.jsp").forward(request, response);
-//                }
-//                
-//            }
-//        } else{
-//            if (url.endsWith("userlist")|| url.endsWith("dashboard") || url.contains("combochange")
-//                || url.contains("comboview")|| url.contains("subjectList")|| url.contains("subjectview")) {
-//                req.getRequestDispatcher("../view/404Page/404Page.jsp").forward(request, response);
-//            }
-//        }
+        if (session.getAttribute("account") != null) {
+            Account account = (Account) session.getAttribute("account");
+            if (!account.getRole().getRolename().equals("crdd") ) {
+                if(url.endsWith("userlist")||url.endsWith("dashboard")|| url.contains("combochange")
+                        || url.contains("comboview")|| url.contains("subjectList")|| url.contains("subjectview")){
+                    req.getRequestDispatcher("../view/404Page/404Page.jsp").forward(request, response);
+                }
+                
+            }
+        } else{
+            if (url.endsWith("userlist")|| url.endsWith("dashboard") || url.contains("combochange")
+                || url.contains("comboview")|| url.contains("subjectList")|| url.contains("subjectview")) {
+                req.getRequestDispatcher("../view/404Page/404Page.jsp").forward(request, response);
+            }
+        }
 
         
 
