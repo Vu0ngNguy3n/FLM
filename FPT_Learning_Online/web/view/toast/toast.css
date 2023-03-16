@@ -1,0 +1,26 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 22, 2023, 8:19:31 PM
+    Author     : HP
+*/
+.toast {
+    position: fixed;
+    top: 140px;
+    right: 0;
+    z-index: 999;
+}
+
+.toast.show {
+    display: block;
+    opacity: 1;
+
+}
+
+.toast.hide {
+    display: none;
+    opacity: 0;
+}
+

@@ -1,0 +1,20 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 1, 2023, 11:17:55 PM
+    Author     : admin
+*/
+
+
+
+body h4,p{
+    font-family: Roboto, sans-serif;
+    line-height: 1.3;
+    word-wrap: break-word;
+}
+
+hr {
+    background-color: orange;
+}
